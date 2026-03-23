@@ -691,7 +691,8 @@
   <p class="fade-in">Study Sight is coming soon for Mac. Drop your email and we'll let you know the moment it's ready.</p>
 
   <form class="waitlist-form fade-in" onsubmit="handleSubmit(event)" netlify name="waitlist">
-    <input type="email" placeholder="your@email.com" required id="email-input">
+    <input type="hidden" name="form-name" value="waitlist">
+    <input type="email" placeholder="your@email.com" required id="email-input" name="email">
     <button type="submit">Notify me</button>
   </form>
   <p class="fade-in" id="form-success" style="display:none; color: var(--green); font-size: 14px; margin-top: 16px;">You're on the list. We'll be in touch.</p>
